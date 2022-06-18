@@ -1,6 +1,11 @@
-import { Container } from '@mui/material';
+import styled from '@emotion/styled';
+import { Box, Container } from '@mui/material';
 import Head from 'next/head';
 import Menu from '../Navigation/Menu';
+
+const BoxStyled = styled(Box)`
+  padding: 25px;
+`;
 
 const Layout = ({ children }) => (
   <div>
@@ -10,7 +15,7 @@ const Layout = ({ children }) => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <Container maxWidth="md">
-      <div>{children}</div>
+      <BoxStyled>{children}</BoxStyled>
       <Menu />
     </Container>
   </div>

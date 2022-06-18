@@ -3,7 +3,7 @@ import {
   AccountBalance,
   AccountBalanceWallet,
   InsertChart,
-  MoreHoriz,
+  Settings,
 } from '@mui/icons-material';
 import { Box, Link as MUILink } from '@mui/material';
 import Link from 'next/link';
@@ -40,9 +40,9 @@ const Menu = () => (
         <AccountBalance fontSize="large" />
       </MUILinkStyled>
     </Link>
-    <Link href="/more" passHref>
+    <Link href="/settings" passHref>
       <MUILinkStyled>
-        <MoreHoriz fontSize="large" />
+        <Settings fontSize="large" />
       </MUILinkStyled>
     </Link>
   </BoxStyled>

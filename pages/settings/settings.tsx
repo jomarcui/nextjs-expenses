@@ -1,9 +1,9 @@
 import Layout from '../../components/Layout';
 
-const Records = () => (
+const Settings = () => (
   <Layout>
-    <div>Records</div>
+    <div>Settings</div>
   </Layout>
 );
 
-export default Records;
+export default Settings;
