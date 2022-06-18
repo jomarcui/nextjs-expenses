@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
 const Home = () => (
@@ -10,7 +11,9 @@ const Home = () => (
     </Head>
 
     <main className={styles.main}>
-      <div>Test</div>
+      <Link href="/records">
+        <a>Records</a>
+      </Link>
     </main>
   </div>
 );
