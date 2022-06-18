@@ -1,4 +1,10 @@
 import styled from '@emotion/styled';
+import {
+  AccountBalance,
+  AccountBalanceWallet,
+  InsertChart,
+  MoreHoriz,
+} from '@mui/icons-material';
 import { Box, Link as MUILink } from '@mui/material';
 import Link from 'next/link';
 
@@ -20,16 +26,24 @@ const MUILinkStyled = styled(MUILink)`
 const Menu = () => (
   <BoxStyled>
     <Link href="/records" passHref>
-      <MUILinkStyled>Records</MUILinkStyled>
+      <MUILinkStyled>
+        <AccountBalanceWallet fontSize="large" />
+      </MUILinkStyled>
     </Link>
     <Link href="/stats" passHref>
-      <MUILinkStyled>Stats</MUILinkStyled>
+      <MUILinkStyled>
+        <InsertChart fontSize="large" />
+      </MUILinkStyled>
     </Link>
     <Link href="/accounts" passHref>
-      <MUILinkStyled>Accounts</MUILinkStyled>
+      <MUILinkStyled>
+        <AccountBalance fontSize="large" />
+      </MUILinkStyled>
     </Link>
     <Link href="/more" passHref>
-      <MUILinkStyled>...</MUILinkStyled>
+      <MUILinkStyled>
+        <MoreHoriz fontSize="large" />
+      </MUILinkStyled>
     </Link>
   </BoxStyled>
 );
