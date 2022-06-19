@@ -11,8 +11,8 @@ const Home = () => (
     </Head>
 
     <main className={styles.main}>
-      <Link href="/records">
-        <a>Records</a>
+      <Link href="/transactions">
+        <a>Transactions</a>
       </Link>
     </main>
   </div>
