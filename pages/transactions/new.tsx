@@ -64,17 +64,17 @@ const New = () => {
         </TabList>
         <Box autoComplete="off" component="form">
           {inputs.map(({ label }, index) => (
-            <TextField
-              fullWidth
-              required
-              key={index}
-              label={label}
-              sx={{ m: 2 }}
-              variant="outlined"
-              InputLabelProps={{
-                shrink: true,
-              }}
-            />
+            <Box key={index} sx={{ m: 3 }}>
+              <TextField
+                fullWidth
+                label={label}
+                required
+                variant="outlined"
+                InputLabelProps={{
+                  shrink: true,
+                }}
+              />
+            </Box>
           ))}
         </Box>
       </TabContext>
